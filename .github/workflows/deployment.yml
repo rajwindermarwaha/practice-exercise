@@ -6,7 +6,7 @@ jobs:
      
       steps:
        - name: Use the working directory
-         run: cd ${{ github.workspace }}/testfolder
-         working-directory: ${{ github.workspace }}/testfolder
+         run: cd ${{ github.workspace }}
+         working-directory: ${{ github.workspace }}
        - name: Deploy Code
          run: echo "Deploying...."
