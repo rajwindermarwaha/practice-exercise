@@ -3,13 +3,9 @@ on: workflow_call
 jobs:
     deploy:
       runs-on: ubuntu-22.04
-      env:
-       WORKING_DIRECTORY: ${{ github.workspace }}
+     
       steps:
-       - name: Set working directory
-         run: echo "WORKING_DIRECTORY=${{ github.workspace }}" >> $GITHUB_ENV
-
        - name: Use the working directory
-         run: cd $WORKING_DIRECTORY
+         run: cd ${{ github.workspace }}/testfolder
        - name: Deploy Code
          run: echo "Deploying...."
