@@ -10,6 +10,6 @@ jobs:
          run: echo "WORKING_DIRECTORY=${{ github.workspace }}" >> $GITHUB_ENV
 
        - name: Use the working directory
-         run: cd $WORKING_DIRECTORY/testfolder
+         run: cd $WORKING_DIRECTORY
        - name: Deploy Code
          run: echo "Deploying...."
