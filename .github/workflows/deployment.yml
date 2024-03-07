@@ -1,4 +1,4 @@
-name: Deployment Exercise 1
+name: set working directory and deploy
 on: workflow_call
 jobs:
     deploy:
